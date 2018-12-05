@@ -1,0 +1,8 @@
+#!/bin/bash
+
+_red_=`tput setaf 1`
+_green_=`tput setaf 2`
+_reset_=`tput sgr0`
+
+echo "${_green_}starting the server${_reset_}"
+python manage.py runserver
