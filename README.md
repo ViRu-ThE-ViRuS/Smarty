@@ -21,3 +21,12 @@ Run the server from the root directory...
 $ chmod +x start.sh
 $ source start.sh
 ```
+
+### Lint
+
+Lint check and fix all files...
+
+```sh
+$ chmod +x lint.sh
+$ source lint.sh
+```
