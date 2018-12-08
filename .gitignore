@@ -273,6 +273,18 @@ fabric.properties
 ### Python Patch ###
 .venv/
 
+### VisualStudioCode ###
+.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+
 ### SublimeText ###
 # Cache files for Sublime Text
 *.tmlanguage.cache
