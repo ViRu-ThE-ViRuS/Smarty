@@ -8,9 +8,9 @@ DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$DIR" ]]; then DIR="$PWD"; fi
 
 echo "${_green_}running autopep8${_reset_}"
-cd $DIR/Smarty
+cd ${DIR}/Smarty
 find . -name '*.py' -exec autopep8 -j0 --aggressive --aggressive --in-place '{}' \;
-cd $DIR
+cd ${DIR}
 
 echo "${_green_}running pylint${_reset_}"
-pylint -j0 $DIR/Smarty/**/*.py
+pylint -j0 ${DIR}/Smarty/**/*.py
