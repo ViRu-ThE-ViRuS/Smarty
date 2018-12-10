@@ -5,6 +5,7 @@ from .base_settings import *
 
 try:
     from .local_settings import *
+
     print(colored('Using local_settings.py configuration', 'green'))
 except ImportError as e:
     print(
