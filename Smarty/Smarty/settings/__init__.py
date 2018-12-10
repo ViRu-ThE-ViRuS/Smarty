@@ -1,3 +1,7 @@
+"""
+Smarty.settings.__init__.py
+"""
+
 # TODO: add proper logging
 from termcolor import colored
 
