@@ -7,6 +7,9 @@ _reset_=`tput sgr0`
 DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$DIR" ]]; then DIR="$PWD"; fi
 
+echo "${_green_}running django-checks${_reset_}"
+python "$DIR/Smarty/manage.py" check
+
 echo "${_green_}running autopep8${_reset_}"
 cd ${DIR}/Smarty
 find . -name '*.py' -exec autopep8 -j0 --aggressive --aggressive --in-place '{}' \;
