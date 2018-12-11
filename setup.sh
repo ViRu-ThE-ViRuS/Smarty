@@ -21,3 +21,7 @@ source ${DIR}/bin/activate
 # install all requirements
 echo "${_green_}installing dependencies${_reset_}"
 pip install -r requirements.txt
+
+# install pre-commit
+echo "${_green_}installing pre-commit${_reset_}"
+pre-commit install
