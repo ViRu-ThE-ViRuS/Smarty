@@ -9,7 +9,6 @@ Install the dependencies and devDependencies and start the server...
 ```sh
 $ git clone https://github.com/ViRu-ThE-ViRuS/Smarty.git
 $ cd Smarty
-$ chmod +x setup.sh
 $ source setup.sh
 ```
 
@@ -18,7 +17,6 @@ $ source setup.sh
 Run the server from the root directory...
 
 ```sh
-$ chmod +x start.sh
 $ source start.sh
 ```
 
@@ -27,6 +25,6 @@ $ source start.sh
 Lint check and fix all files...
 
 ```sh
-$ chmod +x lint.sh
+$ source lint_check.sh
 $ source lint.sh
 ```
