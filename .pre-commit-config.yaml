@@ -1,5 +1,10 @@
 fail_fast: false
 repos:
+-   repo: https://github.com/pre-commit/mirrors-autopep8
+    rev: v1.4.3
+    hooks:
+    -   id: autopep8
+        args: ["-i", "-a", "-a", "-j0"]
 -   repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v2.0.0
     hooks:
