@@ -10,3 +10,5 @@ if [[ ! -d "$DIR" ]]; then DIR="$PWD"; fi
 echo "${_green_}running database migrations${_reset_}"
 python "$DIR/Smarty/manage.py" makemigrations
 python "$DIR/Smarty/manage.py" migrate
+
+echo "${_green_}db prepared${_reset_}"

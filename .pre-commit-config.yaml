@@ -1,5 +1,10 @@
 fail_fast: false
 repos:
+-   repo: https://github.com/ViRu-ThE-ViRuS/pre-commit-script-runner
+    rev: v1.0.0
+    hooks:
+    -   id: script-runner
+        args: ['./lint.sh']
 -   repo: https://github.com/pre-commit/mirrors-autopep8
     rev: v1.4.3
     hooks:
