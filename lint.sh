@@ -21,4 +21,6 @@ cd ${DIR}/Smarty
 find . -name '*.py' -exec autopep8 -j0 --aggressive --aggressive --in-place '{}' \;
 cd ${DIR}
 
+source lint_check.sh
+
 echo "${_green_}lint complete${_reset_}"
