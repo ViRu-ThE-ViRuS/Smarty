@@ -24,6 +24,6 @@ source bin/activate
 echo "${_green_}installing dependencies${_reset_}"
 pip install -r requirements.txt
 
-# install pre-commit
-echo "${_green_}installing pre-commit${_reset_}"
-pre-commit install
+# install pre-commit hooks
+echo "${_green_}installing custom hooks${_reset_}"
+source scripts/install-hooks.sh
