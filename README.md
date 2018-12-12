@@ -25,6 +25,5 @@ $ source start.sh
 Lint check and fix all files...
 
 ```sh
-$ source lint_check.sh
 $ source lint.sh
 ```
