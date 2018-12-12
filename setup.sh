@@ -7,6 +7,8 @@ _reset_=`tput sgr0`
 DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$DIR" ]]; then DIR="$PWD"; fi
 
+cd $DIR
+
 echo "${_green_}installing virtualenv${_reset_}"
 sudo pip3 install virtualenv
 
@@ -16,7 +18,7 @@ virtualenv -p python3 ${DIR}/
 
 # activate the virtual environment
 echo "${_green_}activating virtual environment${_reset_}"
-source ${DIR}/bin/activate
+source bin/activate
 
 # install all requirements
 echo "${_green_}installing dependencies${_reset_}"

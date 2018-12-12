@@ -7,8 +7,10 @@ _reset_=`tput sgr0`
 DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$DIR" ]]; then DIR="$PWD"; fi
 
+cd $DIR
+
 echo "${_green_}running database migrations${_reset_}"
-python "$DIR/Smarty/manage.py" makemigrations
-python "$DIR/Smarty/manage.py" migrate
+python Smarty/manage.py makemigrations
+python Smarty/manage.py migrate
 
 echo "${_green_}db prepared${_reset_}"
